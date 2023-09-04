@@ -55,19 +55,19 @@ img{
         border-top-left-radius: 100px;
         border-bottom-left-radius: 50px;
      width: 290px;
-     height: 80px;
+     height: 60px;
     }
     body {
       background-color: lightblue;
     }
     img{
         width: 200px;
-        height: 60px;
+        height: 40px;
     }
     .border{
     display: flex;
     flex-wrap: wrap;
-    height: 140px;
+    height: 100px;
     border: 2px solid rgba(0, 0, 0, 0.137);
     border-radius: 50px;
     background-color: white;
