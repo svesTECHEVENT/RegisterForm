@@ -40,21 +40,21 @@
     color: white;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 50px;
- width: 370px;
- height: 100px;
+ width: 300px;
+ height: 70px;
 }
 img{
     height: 100px;
     width: 300px;
    
 }
-  @media only screen and (max-width: 600px) {
+  @media screen and (max-device-width: 650px) {
     .title{
         background-color: red;
         color: white;
         border-top-left-radius: 100px;
         border-bottom-left-radius: 50px;
-     width: 230px;
+     width: 290px;
      height: 80px;
     }
     body {
