@@ -1,9 +1,7 @@
-import { useState } from "react"
+import { Links } from "./Links"
+
 export const RegisterLinks=()=>{
-    const [arrow,setArrow]=useState(false);
-    function arrowFun(){
-        setArrow(!arrow);
-    }
+    const data=[{"link":1},{"link":2},{"link":3},{"link":4},{"link":5},{"link":6},{"link":7}]
    return(
     <>
     <div>
@@ -11,13 +9,13 @@ export const RegisterLinks=()=>{
           <h2></h2>
         </div>
         <div>
-           <div>
-                <h3>Event1</h3>
-             {arrow?<div onClick={()=>arrowFun()}><span class="material-symbols-outlined">
-expand_less
-</span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYMTXDyDF6TIqnss8MC5G6AoTU1-H1q0qHZEsJDEFnuZ1Ywg/viewform?usp=sf_link">clk</a></div>:<div onClick={()=>arrowFun()}>
-<span class="material-symbols-outlined">keyboard_arrow_down</span></div>}
+           {data.map((link)=>{
+            return(
+                <div>
+              <Links data={link.link}></Links>
            </div>
+            )
+           })}
         </div>
     </div>
     </>

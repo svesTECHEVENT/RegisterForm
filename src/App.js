@@ -3,15 +3,18 @@ function App() {
   return (
     <>
     <div>
-      <div>
+      <div className="header_flex border">
 <Header></Header>
       </div>
+      <div className="main_flex">
       <div>
         <About></About>
       </div>
       <div>
          <RegisterLinks></RegisterLinks>
+      </div>   
       </div>
+     
     </div>
     </>
   );
